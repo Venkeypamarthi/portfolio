@@ -1,5 +1,5 @@
 import { Code } from "lucide-react";
-import profileImage from "@assets/venkey__1__11zon-removebg-preview_11zon-min_1752049378003.jpg";
+import profileImage from "@assets/1000008001-01~2_1752053099229.jpeg";
 
 export default function Hero() {
   return (
