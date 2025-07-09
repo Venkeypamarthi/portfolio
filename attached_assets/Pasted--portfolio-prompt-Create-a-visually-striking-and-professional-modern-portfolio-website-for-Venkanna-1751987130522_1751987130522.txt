@@ -1,0 +1,79 @@
+<portfolio_prompt>
+Create a visually striking and professional modern portfolio website for Venkanna Babu Pamarthi, a passionate tech enthusiast and B.Tech student specializing in Artificial Intelligence & Data Science. The site should feature a sleek dark mode theme that feels attractive and contemporary, suitable for showcasing advanced tech skills and innovative projects.
+
+Introduction Section:
+
+Include a professional profile picture of Venkanna.
+
+Present a concise introduction summarizing Venkanna as a driven tech professional focused on AI, web technologies, and automation. Highlight his passion for problem-solving, system design, and building impactful digital experiences.
+
+Website Structure & Sections:
+
+Home:
+
+Brief welcome message and tagline reflecting Venkanna’s core expertise.
+
+Quick overview linking to other sections of the site.
+
+Possibly an animated or dynamic tech-themed background to enhance engagement.
+
+About:
+
+Display the personal bio describing Venkanna’s background, interests, and career aspirations.
+
+Educational background with degrees, institutions, and graduation years clearly listed.
+
+Work experience section detailing internships and virtual internships with relevant technologies and skills gained.
+
+Skills:
+
+Showcase primary skills such as Python, Java, C, C++, JavaScript, React.js, Node.js, HTML/CSS, AWS Cloud, ML, AI, Data Science, and others.
+
+Include soft skills like problem-solving, system design, and collaboration.
+
+Services:
+
+Highlight offered services including Full Stack Web Development, AI/ML model development, Cloud Computing solutions, Mobile App Development, Automation tools, and custom tech consulting.
+
+Use icons or graphics to visually represent each service for clarity and appeal.
+
+Portfolio / Projects:
+
+Present detailed descriptions of notable projects:
+
+Fileless Malware Detection System (Python, ML, behavioral analysis)
+
+Seafood Supply Chain Communication Platform (ReactJS, Node.js, MongoDB, Firebase) with a live site link
+
+Hand Gesture Controlled System (Python, OpenCV, MediaPipe, PyAutoGUI)
+
+Each project section should include technologies used, purpose, impact, and optionally screenshots or demos.
+
+Contact:
+
+Include all provided contact info: email, phone number, LinkedIn, GitHub, and Instagram links.
+
+Incorporate a clean, easy-to-use contact form.
+
+Add social media icons consistent with the dark mode aesthetic.
+
+Design Elements:
+
+Dark mode with high contrast and vibrant accent colors (e.g., electric blue, teal, or neon green) to emphasize key details.
+
+Minimalist but modern layout with smooth transitions and subtle animations for interactive elements.
+
+Responsive design for mobile and desktop devices.
+
+Use tech-inspired fonts and iconography to complement the AI and software development focus.
+
+Additional Requirements:
+
+Ensure the website is easy to navigate with a sticky header menu linking all main sections.
+
+Optimize for fast loading and SEO-friendly structure.
+
+Incorporate subtle coding or AI-related decorative elements to reinforce the tech theme without overwhelming content.
+
+This website should serve as a compelling digital resume and portfolio that accurately represents Venkanna’s skills, experiences, and future ambitions, while appealing to potential employers, collaborators, and clients in the technology sector.
+</portfolio_prompt>

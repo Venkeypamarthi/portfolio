@@ -1,0 +1,51 @@
+1. Full Stack Developer - Python (Internship)
+Lineysha and Thevan Software Technologies Pvt. Ltd., Vijayawada
+Dec 26, 2022 – Jun 26, 2023
+
+Completed an intensive industrial training program on Full Stack Development using Python.
+
+Gained hands-on experience in front-end and back-end technologies including Python frameworks, database integration, and application deployment.
+
+Applied practical coding and problem-solving skills to build real-world web applications.
+
+2. AI-ML Virtual Internship (Student Intern)
+EduSkills Foundation in collaboration with Google
+Date: Not Specified (2024)
+
+Completed a virtual internship focused on Artificial Intelligence and Machine Learning.
+
+Worked on projects involving data processing, model building, and predictive analysis.
+
+Developed a foundational understanding of ML workflows and best practices using Google Cloud tools.
+
+Virtual Internship – AWS Cloud Computing
+Velagapudi Ramakrishna Siddhartha Engineering College
+📅 August 19, 2024 – August 24, 2024
+
+Participated in a hands-on virtual internship focused on foundational and practical skills in cloud computing using Amazon Web Services.
+
+Explored core AWS services including EC2, S3, Lambda, and IAM.
+
+Gained exposure to deploying scalable applications and understanding cloud architecture fundamentals.
+
+Virtual Internship – Data Engineering on AWS
+Siddhartha Academy of Higher Education
+📅 Date not specified, completed via Eduskills
+
+Completed a structured program designed around AWS data engineering tools and workflows.
+
+Developed skills in ETL processes, data lakes, data warehousing, and working with AWS services like Glue, Redshift, and S3.
+
+Built pipelines to ingest, transform, and analyze datasets in a simulated enterprise environment.
+
+Virtual Internship – Google Android Developer
+Eduskills – Google Developer Program
+📅 Date not specified
+
+Engaged in practical development of Android applications using Java and Kotlin.
+
+Learned UI/UX best practices, application lifecycle, and backend integration using Firebase.
+
+Built and deployed working prototypes of mobile applications demonstrating key Android components.
+
+
