@@ -13,29 +13,32 @@ import Contact from "./Contact";
 export default function Portfolio() {
   useEffect(() => {
     // Apply dark mode class to body
-    document.body.classList.add('dark');
-    
+    document.body.classList.add("dark");
+
     // Smooth scrolling for navigation links
     const handleClick = (e: Event) => {
       const target = e.target as HTMLElement;
-      if (target.tagName === 'A' && target.getAttribute('href')?.startsWith('#')) {
+      if (
+        target.tagName === "A" &&
+        target.getAttribute("href")?.startsWith("#")
+      ) {
         e.preventDefault();
-        const targetId = target.getAttribute('href')?.substring(1);
+        const targetId = target.getAttribute("href")?.substring(1);
         if (targetId) {
           const targetElement = document.getElementById(targetId);
           if (targetElement) {
             const offsetTop = targetElement.offsetTop - 80;
             window.scrollTo({
               top: offsetTop,
-              behavior: 'smooth'
+              behavior: "smooth",
             });
           }
         }
       }
     };
 
-    document.addEventListener('click', handleClick);
-    return () => document.removeEventListener('click', handleClick);
+    document.addEventListener("click", handleClick);
+    return () => document.removeEventListener("click", handleClick);
   }, []);
 
   return (
@@ -50,12 +53,12 @@ export default function Portfolio() {
       <Experience />
       <ExtraCurricular />
       <Contact />
-      
+
       {/* Footer */}
       <footer className="py-8 bg-dark-primary border-t border-dark-border">
         <div className="container mx-auto px-6 text-center">
           <p className="text-text-muted">
-            © 2024 Venkanna Babu Pamarthi. All rights reserved.
+            © 2026 Venkanna Babu Pamarthi. All rights reserved.
           </p>
         </div>
       </footer>

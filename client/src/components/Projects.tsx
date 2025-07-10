@@ -1,4 +1,4 @@
-import { Shield, Fish, Hand, Github, ExternalLink, Play } from "lucide-react";
+import { Shield, Fish, Hand, Github, ExternalLink, Play, Code, Sparkles, Eye } from "lucide-react";
 
 export default function Projects() {
   const projects = [
@@ -56,38 +56,52 @@ export default function Projects() {
   ];
 
   return (
-    <section id="projects" className="py-20 bg-dark-secondary">
-      <div className="container mx-auto px-6">
-        <h2 className="text-3xl md:text-4xl font-bold font-poppins text-center mb-12">
-          Featured <span className="text-blue-accent">Projects</span>
-        </h2>
+    <section id="projects" className="py-20 bg-dark-secondary relative overflow-hidden">
+      {/* Floating background elements */}
+      <div className="absolute top-20 left-16 w-28 h-28 bg-blue-accent/5 rounded-full animate-float"></div>
+      <div className="absolute bottom-28 right-20 w-24 h-24 bg-teal-accent/5 rounded-full animate-float-delayed"></div>
+      <div className="absolute top-1/2 left-10 w-20 h-20 bg-green-accent/5 rounded-full animate-float-slow"></div>
+      
+      <div className="container mx-auto px-6 relative z-10">
+        <div className="flex items-center justify-center gap-3 mb-12">
+          <Code className="text-blue-accent animate-pulse" size={28} />
+          <h2 className="text-3xl md:text-4xl font-bold font-poppins text-center">
+            Featured <span className="text-blue-accent">Projects</span>
+          </h2>
+          <Sparkles className="text-teal-accent animate-pulse" size={28} style={{animationDelay: '0.5s'}} />
+        </div>
         <div className="max-w-6xl mx-auto space-y-12">
           {projects.map((project, index) => (
             <div
               key={index}
-              className="bg-dark-card rounded-xl overflow-hidden hover:bg-dark-card/80 transition-all duration-300"
+              className={`group bg-dark-card rounded-xl overflow-hidden hover:bg-dark-card/80 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-blue-accent/10 ${
+                index % 2 === 0 ? 'animate-slide-in-left' : 'animate-slide-in-right'
+              }`}
+              style={{animationDelay: `${index * 0.2}s`}}
             >
               <div className="md:flex">
                 <div
                   className={`md:w-1/2 ${index % 2 === 0 ? "order-1" : "order-2"} p-8`}
                 >
-                  <div className="text-blue-accent text-sm font-mono mb-2">
-                    <project.icon className="inline mr-2" size={16} />
+                  <div className="text-blue-accent text-sm font-mono mb-2 flex items-center gap-2">
+                    <div className="p-1 bg-blue-accent/20 rounded group-hover:bg-blue-accent/30 transition-colors duration-300">
+                      <project.icon size={16} className="group-hover:animate-pulse" />
+                    </div>
                     {project.category}
                   </div>
-                  <h3 className="text-2xl font-bold mb-4">{project.title}</h3>
-                  <p className="text-text-muted mb-6">{project.description}</p>
+                  <h3 className="text-2xl font-bold mb-4 group-hover:text-blue-accent transition-colors duration-300">{project.title}</h3>
+                  <p className="text-text-muted mb-6 group-hover:text-text-primary transition-colors duration-300">{project.description}</p>
                   <div className="flex flex-wrap gap-2 mb-6">
                     {project.technologies.map((tech, techIndex) => (
                       <span
                         key={techIndex}
                         className={`${
                           techIndex % 3 === 0
-                            ? "bg-blue-accent/20 text-blue-accent"
+                            ? "bg-blue-accent/20 text-blue-accent border border-blue-accent/30"
                             : techIndex % 3 === 1
-                              ? "bg-teal-accent/20 text-teal-accent"
-                              : "bg-green-accent/20 text-green-accent"
-                        } px-3 py-1 rounded-full text-sm`}
+                              ? "bg-teal-accent/20 text-teal-accent border border-teal-accent/30"
+                              : "bg-green-accent/20 text-green-accent border border-green-accent/30"
+                        } px-3 py-1 rounded-full text-sm transition-all duration-300 hover:scale-110 cursor-pointer hover-lift`}
                       >
                         {tech}
                       </span>

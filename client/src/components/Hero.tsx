@@ -1,4 +1,4 @@
-import { Code } from "lucide-react";
+import { Code, ArrowRight, Download, Sparkles, Zap } from "lucide-react";
 import profileImage from "@assets/1000008001-01~2_1752053099229.jpeg";
 
 export default function Hero() {
@@ -30,7 +30,7 @@ export default function Hero() {
             <h1 className="text-4xl md:text-6xl font-bold font-poppins leading-tight">
               Hi, I'm <span className="text-blue-accent">VENKANNA BABU</span>
               <br />
-              <span className="text-teal-accent">PPAMARTHI</span>
+              <span className="text-teal-accent">PAMARTHI</span>
             </h1>
             <p className="text-xl text-text-muted max-w-lg">
               Passionate AI & Data Science student specializing in Full Stack
@@ -39,16 +39,32 @@ export default function Hero() {
             <div className="flex flex-wrap gap-4 mt-8">
               <a
                 href="#projects"
-                className="bg-blue-accent hover:bg-blue-accent/80 text-dark-primary px-8 py-3 rounded-lg font-semibold transition-all duration-300 hover:scale-105"
+                className="group bg-blue-accent hover:bg-blue-accent/80 text-dark-primary px-8 py-3 rounded-lg font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-blue-accent/25 flex items-center gap-2"
               >
+                <Sparkles size={18} className="group-hover:animate-pulse" />
                 View My Work
+                <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform duration-300" />
               </a>
               <a
                 href="#contact"
-                className="border border-blue-accent text-blue-accent hover:bg-blue-accent hover:text-dark-primary px-8 py-3 rounded-lg font-semibold transition-all duration-300"
+                className="group border border-blue-accent text-blue-accent hover:bg-blue-accent hover:text-dark-primary px-8 py-3 rounded-lg font-semibold transition-all duration-300 hover:scale-105 flex items-center gap-2"
               >
+                <Zap size={18} className="group-hover:animate-pulse" />
                 Get In Touch
               </a>
+            </div>
+            
+            {/* Animated skill badges */}
+            <div className="flex flex-wrap gap-3 mt-8 pt-6 border-t border-dark-border/30">
+              <span className="px-4 py-2 bg-blue-accent/10 text-blue-accent rounded-full text-sm font-medium border border-blue-accent/20 animate-fade-in">
+                AI & ML
+              </span>
+              <span className="px-4 py-2 bg-teal-accent/10 text-teal-accent rounded-full text-sm font-medium border border-teal-accent/20 animate-fade-in" style={{animationDelay: '0.2s'}}>
+                Full Stack
+              </span>
+              <span className="px-4 py-2 bg-green-accent/10 text-green-accent rounded-full text-sm font-medium border border-green-accent/20 animate-fade-in" style={{animationDelay: '0.4s'}}>
+                Cloud Computing
+              </span>
             </div>
           </div>
 

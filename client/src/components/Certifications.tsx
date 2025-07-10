@@ -1,4 +1,4 @@
-import { Award, Shield, Database, Server, Smartphone, Terminal, Cog, Wifi, BarChart, Lock, Brain, Code, Target } from "lucide-react";
+import { Award, Shield, Database, Server, Smartphone, Terminal, Cog, Wifi, BarChart, Lock, Brain, Code, Target, Calendar, ExternalLink, Trophy, Star } from "lucide-react";
 
 export default function Certifications() {
   const certifications = [
@@ -103,23 +103,64 @@ export default function Certifications() {
   ];
 
   return (
-    <section id="certifications" className="py-20">
-      <div className="container mx-auto px-6">
-        <h2 className="text-3xl md:text-4xl font-bold font-poppins text-center mb-12">
-          My <span className="text-blue-accent">Certifications</span>
-        </h2>
+    <section id="certifications" className="py-20 relative overflow-hidden">
+      {/* Floating background elements */}
+      <div className="absolute top-16 right-16 w-28 h-28 bg-blue-accent/5 rounded-full animate-float"></div>
+      <div className="absolute bottom-20 left-20 w-24 h-24 bg-teal-accent/5 rounded-full animate-float-delayed"></div>
+      <div className="absolute top-1/3 right-1/4 w-20 h-20 bg-green-accent/5 rounded-full animate-float-slow"></div>
+      
+      <div className="container mx-auto px-6 relative z-10">
+        <div className="flex items-center justify-center gap-3 mb-12">
+          <Trophy className="text-blue-accent animate-pulse" size={28} />
+          <h2 className="text-3xl md:text-4xl font-bold font-poppins text-center">
+            My <span className="text-blue-accent">Certifications</span>
+          </h2>
+          <Star className="text-teal-accent animate-pulse" size={28} style={{animationDelay: '0.5s'}} />
+        </div>
+        
+        {/* Stats overview */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16 max-w-4xl mx-auto">
+          <div className="text-center group cursor-pointer animate-bounce-in">
+            <div className="text-3xl font-bold text-blue-accent mb-2 group-hover:scale-110 transition-transform duration-300">13</div>
+            <p className="text-text-muted text-sm">Total Certificates</p>
+          </div>
+          <div className="text-center group cursor-pointer animate-bounce-in" style={{animationDelay: '0.2s'}}>
+            <div className="text-3xl font-bold text-teal-accent mb-2 group-hover:scale-110 transition-transform duration-300">5</div>
+            <p className="text-text-muted text-sm">Major Platforms</p>
+          </div>
+          <div className="text-center group cursor-pointer animate-bounce-in" style={{animationDelay: '0.4s'}}>
+            <div className="text-3xl font-bold text-green-accent mb-2 group-hover:scale-110 transition-transform duration-300">2024</div>
+            <p className="text-text-muted text-sm">Recent Year</p>
+          </div>
+          <div className="text-center group cursor-pointer animate-bounce-in" style={{animationDelay: '0.6s'}}>
+            <div className="text-3xl font-bold text-purple-500 mb-2 group-hover:scale-110 transition-transform duration-300">100%</div>
+            <p className="text-text-muted text-sm">Completion Rate</p>
+          </div>
+        </div>
+        
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {certifications.map((cert, index) => (
-            <div key={index} className="bg-dark-card p-6 rounded-xl hover:bg-dark-card/80 transition-all duration-300 hover:scale-105">
-              <div className={`text-${cert.color} text-2xl mb-3`}>
-                <cert.icon size={32} />
+            <div key={index} className={`group bg-dark-card p-6 rounded-xl hover:bg-dark-card/80 transition-all duration-500 hover:scale-105 hover:shadow-xl hover:shadow-${cert.color}/10 animate-slide-up cursor-pointer`} style={{animationDelay: `${index * 0.1}s`}}>
+              <div className="flex items-start justify-between mb-4">
+                <div className={`p-3 bg-${cert.color}/20 rounded-xl group-hover:bg-${cert.color}/30 group-hover:scale-110 transition-all duration-300`}>
+                  <cert.icon size={28} className={`text-${cert.color} group-hover:animate-pulse`} />
+                </div>
+                {cert.date && (
+                  <div className="flex items-center gap-1 text-xs text-text-muted">
+                    <Calendar size={12} />
+                    {cert.date}
+                  </div>
+                )}
               </div>
-              <h3 className="text-lg font-semibold mb-2">{cert.title}</h3>
-              <p className="text-text-muted text-sm mb-2">{cert.provider}</p>
-              {cert.date && (
-                <p className="text-blue-accent text-xs font-mono mb-2">{cert.date}</p>
-              )}
-              <p className="text-text-muted text-xs">{cert.description}</p>
+              <h3 className={`text-lg font-semibold mb-2 group-hover:text-${cert.color} transition-colors duration-300`}>{cert.title}</h3>
+              <p className="text-text-muted text-sm mb-3 flex items-center gap-2">
+                <Award size={14} className={`text-${cert.color}`} />
+                {cert.provider}
+              </p>
+              <p className="text-text-muted text-xs leading-relaxed group-hover:text-text-primary transition-colors duration-300">{cert.description}</p>
+              
+              {/* Hover effect overlay */}
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-xl animate-shimmer"></div>
             </div>
           ))}
         </div>
