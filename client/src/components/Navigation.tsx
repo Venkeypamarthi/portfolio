@@ -61,6 +61,12 @@ export default function Navigation() {
               Experience
             </a>
             <a
+              href="#extracurricular"
+              className="hover:text-blue-accent transition-colors duration-300"
+            >
+              Activities
+            </a>
+            <a
               href="#contact"
               className="hover:text-blue-accent transition-colors duration-300"
             >
@@ -130,6 +136,13 @@ export default function Navigation() {
                 onClick={toggleMenu}
               >
                 Experience
+              </a>
+              <a
+                href="#extracurricular"
+                className="block hover:text-blue-accent transition-colors duration-300"
+                onClick={toggleMenu}
+              >
+                Activities
               </a>
               <a
                 href="#contact"

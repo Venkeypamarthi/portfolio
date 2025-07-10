@@ -7,6 +7,7 @@ import Skills from "./Skills";
 import Certifications from "./Certifications";
 import Projects from "./Projects";
 import Experience from "./Experience";
+import ExtraCurricular from "./ExtraCurricular";
 import Contact from "./Contact";
 
 export default function Portfolio() {
@@ -47,6 +48,7 @@ export default function Portfolio() {
       <Certifications />
       <Projects />
       <Experience />
+      <ExtraCurricular />
       <Contact />
       
       {/* Footer */}
