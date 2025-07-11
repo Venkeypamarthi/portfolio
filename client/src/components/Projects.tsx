@@ -64,11 +64,11 @@ export default function Projects() {
       
       <div className="container mx-auto px-6 relative z-10">
         <div className="flex items-center justify-center gap-3 mb-12">
-          <Code className="text-blue-accent animate-pulse" size={28} />
-          <h2 className="text-3xl md:text-4xl font-bold font-poppins text-center">
+          <Code className="text-blue-accent animate-pulse hover:scale-125 hover:rotate-12 transition-all duration-300 cursor-pointer" size={28} />
+          <h2 className="text-3xl md:text-4xl font-bold font-poppins text-center hover:text-blue-accent transition-colors duration-300 cursor-pointer text-hover-glow">
             Featured <span className="text-blue-accent">Projects</span>
           </h2>
-          <Sparkles className="text-teal-accent animate-pulse" size={28} style={{animationDelay: '0.5s'}} />
+          <Sparkles className="text-teal-accent animate-pulse hover:scale-125 hover:rotate-12 transition-all duration-300 cursor-pointer" size={28} style={{animationDelay: '0.5s'}} />
         </div>
         <div className="max-w-6xl mx-auto space-y-12">
           {projects.map((project, index) => (

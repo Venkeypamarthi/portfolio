@@ -1,4 +1,4 @@
-import { Brain, Code, Cloud, Star, Award, Target, Lightbulb } from "lucide-react";
+import { Brain, Code, Cloud, Star, Award, Target, Lightbulb, TrendingUp, Zap, Rocket, Globe2, Database, Shield } from "lucide-react";
 
 export default function About() {
   return (
@@ -17,20 +17,42 @@ export default function About() {
             </h2>
             <Star className="text-teal-accent animate-pulse" size={24} style={{animationDelay: '0.5s'}} />
           </div>
-          <p className="text-lg text-text-muted mb-8 leading-relaxed">
+          <p className="text-lg text-text-muted mb-8 leading-relaxed group cursor-pointer hover:text-text-primary transition-colors duration-300">
             I'm a motivated and detail-oriented Computer Science Engineering student actively seeking opportunities to apply 
             theoretical knowledge and hands-on skills in dynamic engineering environments. Passionate about contributing to 
             innovative projects, leveraging strong academic foundation, and gaining practical experience in AI, ML, and Full Stack Development.
           </p>
+          
+          {/* Interactive stats */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12">
+            <div className="group text-center cursor-pointer hover:scale-110 transition-all duration-300">
+              <div className="text-2xl font-bold text-blue-accent mb-2 group-hover:animate-pulse">3+</div>
+              <p className="text-text-muted text-sm group-hover:text-blue-accent transition-colors duration-300">Years Learning</p>
+            </div>
+            <div className="group text-center cursor-pointer hover:scale-110 transition-all duration-300">
+              <div className="text-2xl font-bold text-teal-accent mb-2 group-hover:animate-pulse">10+</div>
+              <p className="text-text-muted text-sm group-hover:text-teal-accent transition-colors duration-300">Projects Built</p>
+            </div>
+            <div className="group text-center cursor-pointer hover:scale-110 transition-all duration-300">
+              <div className="text-2xl font-bold text-green-accent mb-2 group-hover:animate-pulse">13+</div>
+              <p className="text-text-muted text-sm group-hover:text-green-accent transition-colors duration-300">Certifications</p>
+            </div>
+            <div className="group text-center cursor-pointer hover:scale-110 transition-all duration-300">
+              <div className="text-2xl font-bold text-purple-500 mb-2 group-hover:animate-pulse">8.79</div>
+              <p className="text-text-muted text-sm group-hover:text-purple-500 transition-colors duration-300">Current CGPA</p>
+            </div>
+          </div>
           <div className="grid md:grid-cols-3 gap-8 mt-12">
             <div className="group bg-dark-card p-6 rounded-xl hover:bg-dark-card/80 transition-all duration-500 hover:scale-105 hover:shadow-xl hover:shadow-blue-accent/10 animate-slide-up">
               <div className="text-blue-accent text-2xl mb-4 group-hover:scale-110 transition-transform duration-300">
                 <Brain size={32} className="mx-auto group-hover:animate-pulse" />
               </div>
               <h3 className="text-xl font-semibold mb-2 group-hover:text-blue-accent transition-colors duration-300">AI & Data Science</h3>
-              <p className="text-text-muted">Specializing in machine learning, deep learning, and data analysis with hands-on project experience.</p>
-              <div className="flex justify-center mt-4">
-                <Lightbulb className="text-blue-accent opacity-0 group-hover:opacity-100 transition-opacity duration-300" size={20} />
+              <p className="text-text-muted group-hover:text-text-primary transition-colors duration-300">Specializing in machine learning, deep learning, and data analysis with hands-on project experience.</p>
+              <div className="flex justify-center gap-2 mt-4">
+                <Lightbulb className="text-blue-accent opacity-0 group-hover:opacity-100 transition-all duration-300 hover:scale-125 cursor-pointer" size={20} />
+                <Database className="text-blue-accent opacity-0 group-hover:opacity-100 transition-all duration-500 hover:scale-125 cursor-pointer" size={20} />
+                <TrendingUp className="text-blue-accent opacity-0 group-hover:opacity-100 transition-all duration-700 hover:scale-125 cursor-pointer" size={20} />
               </div>
             </div>
             <div className="group bg-dark-card p-6 rounded-xl hover:bg-dark-card/80 transition-all duration-500 hover:scale-105 hover:shadow-xl hover:shadow-teal-accent/10 animate-slide-up" style={{animationDelay: '0.2s'}}>
@@ -38,9 +60,11 @@ export default function About() {
                 <Code size={32} className="mx-auto group-hover:animate-pulse" />
               </div>
               <h3 className="text-xl font-semibold mb-2 group-hover:text-teal-accent transition-colors duration-300">Full Stack Development</h3>
-              <p className="text-text-muted">Proficient in front-end and back-end technologies including Python, JavaScript, React, and Django.</p>
-              <div className="flex justify-center mt-4">
-                <Target className="text-teal-accent opacity-0 group-hover:opacity-100 transition-opacity duration-300" size={20} />
+              <p className="text-text-muted group-hover:text-text-primary transition-colors duration-300">Proficient in front-end and back-end technologies including Python, JavaScript, React, and Django.</p>
+              <div className="flex justify-center gap-2 mt-4">
+                <Target className="text-teal-accent opacity-0 group-hover:opacity-100 transition-all duration-300 hover:scale-125 cursor-pointer" size={20} />
+                <Code className="text-teal-accent opacity-0 group-hover:opacity-100 transition-all duration-500 hover:scale-125 cursor-pointer" size={20} />
+                <Zap className="text-teal-accent opacity-0 group-hover:opacity-100 transition-all duration-700 hover:scale-125 cursor-pointer" size={20} />
               </div>
             </div>
             <div className="group bg-dark-card p-6 rounded-xl hover:bg-dark-card/80 transition-all duration-500 hover:scale-105 hover:shadow-xl hover:shadow-green-accent/10 animate-slide-up" style={{animationDelay: '0.4s'}}>
@@ -48,9 +72,11 @@ export default function About() {
                 <Cloud size={32} className="mx-auto group-hover:animate-pulse" />
               </div>
               <h3 className="text-xl font-semibold mb-2 group-hover:text-green-accent transition-colors duration-300">Cloud Computing</h3>
-              <p className="text-text-muted">Experienced with AWS services including EC2, S3, Lambda, and cloud architecture fundamentals.</p>
-              <div className="flex justify-center mt-4">
-                <Award className="text-green-accent opacity-0 group-hover:opacity-100 transition-opacity duration-300" size={20} />
+              <p className="text-text-muted group-hover:text-text-primary transition-colors duration-300">Experienced with AWS services including EC2, S3, Lambda, and cloud architecture fundamentals.</p>
+              <div className="flex justify-center gap-2 mt-4">
+                <Award className="text-green-accent opacity-0 group-hover:opacity-100 transition-all duration-300 hover:scale-125 cursor-pointer" size={20} />
+                <Globe2 className="text-green-accent opacity-0 group-hover:opacity-100 transition-all duration-500 hover:scale-125 cursor-pointer" size={20} />
+                <Shield className="text-green-accent opacity-0 group-hover:opacity-100 transition-all duration-700 hover:scale-125 cursor-pointer" size={20} />
               </div>
             </div>
           </div>

@@ -1,4 +1,4 @@
-import { Code, ArrowRight, Download, Sparkles, Zap } from "lucide-react";
+import { Code, ArrowRight, Download, Sparkles, Zap, MousePointer, Heart, Coffee, Rocket, Star, Globe, Users, Brain } from "lucide-react";
 import profileImage from "@assets/1000008001-01~2_1752053099229.jpeg";
 
 export default function Hero() {
@@ -54,29 +54,55 @@ export default function Hero() {
               </a>
             </div>
             
-            {/* Animated skill badges */}
+            {/* Enhanced animated skill badges */}
             <div className="flex flex-wrap gap-3 mt-8 pt-6 border-t border-dark-border/30">
-              <span className="px-4 py-2 bg-blue-accent/10 text-blue-accent rounded-full text-sm font-medium border border-blue-accent/20 animate-fade-in">
+              <span className="group px-4 py-2 bg-blue-accent/10 text-blue-accent rounded-full text-sm font-medium border border-blue-accent/20 animate-fade-in hover:bg-blue-accent/20 hover:scale-110 hover:shadow-lg hover:shadow-blue-accent/25 transition-all duration-300 cursor-pointer">
+                <Brain className="inline mr-1" size={14} />
                 AI & ML
               </span>
-              <span className="px-4 py-2 bg-teal-accent/10 text-teal-accent rounded-full text-sm font-medium border border-teal-accent/20 animate-fade-in" style={{animationDelay: '0.2s'}}>
+              <span className="group px-4 py-2 bg-teal-accent/10 text-teal-accent rounded-full text-sm font-medium border border-teal-accent/20 animate-fade-in hover:bg-teal-accent/20 hover:scale-110 hover:shadow-lg hover:shadow-teal-accent/25 transition-all duration-300 cursor-pointer" style={{animationDelay: '0.2s'}}>
+                <Code className="inline mr-1" size={14} />
                 Full Stack
               </span>
-              <span className="px-4 py-2 bg-green-accent/10 text-green-accent rounded-full text-sm font-medium border border-green-accent/20 animate-fade-in" style={{animationDelay: '0.4s'}}>
+              <span className="group px-4 py-2 bg-green-accent/10 text-green-accent rounded-full text-sm font-medium border border-green-accent/20 animate-fade-in hover:bg-green-accent/20 hover:scale-110 hover:shadow-lg hover:shadow-green-accent/25 transition-all duration-300 cursor-pointer" style={{animationDelay: '0.4s'}}>
+                <Globe className="inline mr-1" size={14} />
                 Cloud Computing
+              </span>
+              <span className="group px-4 py-2 bg-purple-500/10 text-purple-500 rounded-full text-sm font-medium border border-purple-500/20 animate-fade-in hover:bg-purple-500/20 hover:scale-110 hover:shadow-lg hover:shadow-purple-500/25 transition-all duration-300 cursor-pointer" style={{animationDelay: '0.6s'}}>
+                <Users className="inline mr-1" size={14} />
+                Team Player
               </span>
             </div>
           </div>
 
           <div className="flex justify-center animate-fade-in">
-            <div className="relative">
-              <div className="absolute -inset-1 bg-gradient-to-r from-blue-accent to-teal-accent rounded-full blur opacity-75 animate-glow"></div>
-              <div className="relative bg-dark-card p-2 rounded-full">
+            <div className="relative group cursor-pointer">
+              <div className="absolute -inset-1 bg-gradient-to-r from-blue-accent to-teal-accent rounded-full blur opacity-75 animate-glow group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="relative bg-dark-card p-2 rounded-full group-hover:scale-105 transition-all duration-500">
                 <img
                   src={profileImage}
                   alt="Venkanna Babu Pamarthi"
-                  className="w-80 h-80 rounded-full object-cover shadow-2xl"
+                  className="w-80 h-80 rounded-full object-cover shadow-2xl group-hover:scale-110 transition-transform duration-700"
                 />
+                {/* Floating icons around profile */}
+                <div className="absolute -top-2 -right-2 w-12 h-12 bg-blue-accent rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 group-hover:animate-pulse transition-all duration-500 hover:scale-125 hover:rotate-12 cursor-pointer">
+                  <Code className="text-dark-primary" size={20} />
+                </div>
+                <div className="absolute -bottom-2 -left-2 w-12 h-12 bg-teal-accent rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 group-hover:animate-pulse transition-all duration-500 hover:scale-125 hover:rotate-12 cursor-pointer" style={{transitionDelay: '0.2s'}}>
+                  <Sparkles className="text-dark-primary" size={20} />
+                </div>
+                <div className="absolute top-1/4 -right-4 w-10 h-10 bg-green-accent rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 group-hover:animate-pulse transition-all duration-500 hover:scale-125 hover:rotate-12 cursor-pointer" style={{transitionDelay: '0.4s'}}>
+                  <Zap className="text-dark-primary" size={16} />
+                </div>
+                <div className="absolute top-1/4 -left-4 w-10 h-10 bg-purple-500 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 group-hover:animate-pulse transition-all duration-500 hover:scale-125 hover:rotate-12 cursor-pointer" style={{transitionDelay: '0.6s'}}>
+                  <Heart className="text-white" size={16} />
+                </div>
+                <div className="absolute bottom-1/4 -right-4 w-8 h-8 bg-yellow-500 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 group-hover:animate-pulse transition-all duration-500 hover:scale-125 hover:rotate-12 cursor-pointer" style={{transitionDelay: '0.8s'}}>
+                  <Coffee className="text-dark-primary" size={14} />
+                </div>
+                <div className="absolute bottom-1/4 -left-4 w-8 h-8 bg-red-500 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 group-hover:animate-pulse transition-all duration-500 hover:scale-125 hover:rotate-12 cursor-pointer" style={{transitionDelay: '1s'}}>
+                  <Rocket className="text-white" size={14} />
+                </div>
               </div>
             </div>
           </div>
